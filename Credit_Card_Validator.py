@@ -52,9 +52,11 @@ def validator(card_number):
 
 def main():
     card_number = input_card()
+    #if the credit card is just in digits that we dont need to check and remove spaces or hyphen
     if card_number.isdigit():
         print(validator(card_number))
     else:
+    #if the user adds anything else than just digits than we need checker 
         print(validator(checker(card_number)))
    
        
